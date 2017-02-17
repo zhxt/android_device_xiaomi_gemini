@@ -130,6 +130,7 @@ service qseecomd /system/bin/qseecomd
     class core
     user root
     group root
+    disabled
 
 service thermal-engine /system/vendor/bin/thermal-engine
     class main
@@ -143,6 +144,7 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
+    disabled
 
 service adsprpcd /system/bin/adsprpcd
     class main
