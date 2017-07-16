@@ -95,6 +95,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
     writepid /dev/cpuset/system-background/tasks
+    setenv LD_LIBRARY_PATH /vendor/lib:/system/lib
 
 # Fingerprint service
 service fingerprintd /system/bin/fingerprintd
